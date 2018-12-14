@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  postgres:
+    command: postgres -c 'config_file=/var/lib/postgresql/data/postgresql.conf' #-c 'log_statement=all'
+    volumes:
+      - postgres_log:/var/log/postgresql
+
+volumes:
+  postgres_log:
+    driver: local
+    driver_opts:
+      type: none
+      device: ${POSTGRES_LOG_DIR:-/data/data_postgres/postgres_log}
+      o: bind
+  postgres_data:
+    driver: local
+    driver_opts:
+      type: none
+      device: ${POSTGRES_DATA_DIR:-/data/data_postgres/postgres_data}
+      o: bind
