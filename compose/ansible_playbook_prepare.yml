@@ -51,7 +51,7 @@
         - key: "POSTGRES_USER"
           value: "{{ postgres_user }}"
         - key: "POSTGRES_PASSWORD"
-          value: "{{ postgres_password }}"
+          value: "\"{{ postgres_password }}\""
         - key: "POSTGRES_DATA_DIR"
           value: "{{ postgres_data_dir }}"
         - key: "POSTGRES_LOG_DIR"
