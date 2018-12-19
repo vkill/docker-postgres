@@ -1,5 +1,5 @@
 ---
-postgres_root_dir: "/data/data_postgres"
+postgres_root_dir: "/data/x_postgres"
 
 postgres_dotenv_dir: "{{ postgres_root_dir }}/compose_project"
 

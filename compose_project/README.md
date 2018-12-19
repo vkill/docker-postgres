@@ -10,7 +10,7 @@ bash ansible_playbook_prepare.sh -e "@ansible_var_prepare.yml" -i ansible_hosts
 ```
 
 ```
-cd /data/data_postgres/compose_project
+cd /data/x_postgres/compose_project
 bash docker-compose.sh up
 ```
 

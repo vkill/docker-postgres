@@ -11,11 +11,11 @@ volumes:
     driver: local
     driver_opts:
       type: none
-      device: ${POSTGRES_LOG_DIR:-/data/data_postgres/postgres_log}
+      device: ${POSTGRES_LOG_DIR:-/data/x_postgres/postgres_log}
       o: bind
   postgres_data:
     driver: local
     driver_opts:
       type: none
-      device: ${POSTGRES_DATA_DIR:-/data/data_postgres/postgres_data}
+      device: ${POSTGRES_DATA_DIR:-/data/x_postgres/postgres_data}
       o: bind
